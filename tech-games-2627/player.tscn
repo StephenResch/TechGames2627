@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://w4hrke8m53jy"]
+
+[ext_resource type="Texture2D" uid="uid://bfxf3ft1lumj2" path="res://icon.svg" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://bqfj2xqr3lo2t" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7brjq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4flbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_4flbx")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7brjq"]
+size = Vector2(64, 64)
+
+[node name="Player" type="Area2D" unique_id=732282252]
+script = ExtResource("1_onrkg")
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1747838063]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1898497444]
+sprite_frames = SubResource("SpriteFrames_7brjq")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1694269210]
+shape = SubResource("RectangleShape2D_7brjq")
