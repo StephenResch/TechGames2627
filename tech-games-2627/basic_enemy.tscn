@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cp0no8p4onuid"]
+
+[ext_resource type="Script" uid="uid://cc2tjvmuygjm6" path="res://basic_enemy.gd" id="1_naotq"]
+[ext_resource type="Texture2D" uid="uid://bfxf3ft1lumj2" path="res://icon.svg" id="2_rwafm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_naotq"]
+
+[node name="BasicEnemy" type="CharacterBody2D" unique_id=1498987459]
+position = Vector2(581, 294)
+script = ExtResource("1_naotq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1363204167]
+texture = ExtResource("2_rwafm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=45575530]
+scale = Vector2(6.4000006, 6.4000006)
+shape = SubResource("RectangleShape2D_naotq")
+
+[node name="Timer" type="Timer" parent="." unique_id=522314906]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
