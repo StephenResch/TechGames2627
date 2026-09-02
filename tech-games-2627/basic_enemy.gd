@@ -1,10 +1,12 @@
 extends CharacterBody2D
 
-@export var speed: float = 150.0
 @onready var timer: Timer = $Timer
 var screen_size
-
 var movement_direction: Vector2 = Vector2.ZERO
+@export var speed = 200
+@export var damage = 5
+@export var health = 30
+
 
 func _ready() -> void:
 	screen_size = get_viewport_rect().size

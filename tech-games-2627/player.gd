@@ -1,5 +1,5 @@
 extends Area2D
-
+signal player_position(position)
 @export var speed = 200
 @export var damage = 10
 @export var health = 100
@@ -30,6 +30,7 @@ func _process(delta):
 	
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
+	print(position)
 	
 	if velocity.x != 0:
 		$AnimatedSprite2D.animation = "walk"
