@@ -1,12 +1,6 @@
-[gd_resource type="TileSet" load_steps=7 format=3]
-
-[ext_resource type="Texture2D" path="res://terrain.png" id="1_sheet"]
-[ext_resource type="Texture2D" path="res://autotile_dirt.png" id="2_sheet"]
-[ext_resource type="Texture2D" path="res://props.png" id="3_sheet"]
+[gd_resource type="TileSet" format=3 uid="uid://53d18ifgsk0i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1"]
-texture = ExtResource("1_sheet")
-texture_region_size = Vector2i(16, 16)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -17,8 +11,6 @@ texture_region_size = Vector2i(16, 16)
 7:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2"]
-texture = ExtResource("2_sheet")
-texture_region_size = Vector2i(16, 16)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -68,22 +60,17 @@ texture_region_size = Vector2i(16, 16)
 10:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3"]
-texture = ExtResource("3_sheet")
-texture_region_size = Vector2i(16, 16)
 0:0/0 = 0
-0:0/size_in_atlas = Vector2i(2, 2)
 2:0/0 = 0
 4:0/0 = 0
 6:0/0 = 0
 8:0/0 = 0
 10:0/0 = 0
-10:0/size_in_atlas = Vector2i(2, 2)
 12:0/0 = 0
 14:0/0 = 0
 16:0/0 = 0
 
 [resource]
-tile_size = Vector2i(16, 16)
 sources/0 = SubResource("TileSetAtlasSource_1")
 sources/1 = SubResource("TileSetAtlasSource_2")
 sources/2 = SubResource("TileSetAtlasSource_3")
