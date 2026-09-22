@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci8siaqsk7gti"
-path="res://.godot/imported/dirt_on_grass_esw_sw.png-6a64a5698bac55b93aecb4b9b1442529.ctex"
+uid="uid://cet4btvch461u"
+path="res://.godot/imported/FirstTileSet.png-a5b02bd0378c4e44f1ae725606c70d2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Verdant00_FreeSample/tiles/16x16/dirt_on_grass_esw_sw.png"
-dest_files=["res://.godot/imported/dirt_on_grass_esw_sw.png-6a64a5698bac55b93aecb4b9b1442529.ctex"]
+source_file="res://FirstTileSet.png"
+dest_files=["res://.godot/imported/FirstTileSet.png-a5b02bd0378c4e44f1ae725606c70d2d.ctex"]
 
 [params]
 
