@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://c08covg5l5qoi"]
 
 [ext_resource type="Script" uid="uid://c5saumixmi8jo" path="res://health_upgrade_button.gd" id="1_0vg0c"]
+[ext_resource type="Script" uid="uid://bv7yj8aviwhkg" path="res://chest_selection_scene.gd" id="1_gv4ev"]
 
 [node name="ChestSelectionScene" type="CanvasLayer" unique_id=1400131894]
+process_mode = 3
+script = ExtResource("1_gv4ev")
 
 [node name="Background" type="ColorRect" parent="." unique_id=1362500752]
 anchors_preset = 15
@@ -48,3 +51,6 @@ offset_bottom = 69.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 50
 text = "Choose an Upgrade"
+
+[connection signal="pressed" from="VBoxContainer/HealthUpgradeButton" to="." method="_on_health_upgrade_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/DamageUpgradeButton" to="." method="_on_damage_upgrade_button_pressed"]
